@@ -1,0 +1,43 @@
+package study;
+
+public class TestChar {
+
+	public static void main(String[] args) {
+		
+		String a = "a";
+		String d = "d";
+		String g = "g";
+		
+		int at =Integer.valueOf(a.charAt(0));
+		System.out.println(at);
+		if(at == 97){
+			at = 122;
+		}
+		if(at == 65){
+			at = 90;
+		}
+		//at--;
+		
+		String as = String.valueOf((char)at);
+		System.out.println(as);
+		
+	}
+	
+	public String testChar(String s){
+		
+		int at =Integer.valueOf(s.charAt(0));
+		System.out.println("sµÄASSICÖµ£º"+at);
+		if(at == 97){
+			at = 122;
+		}
+		if(at == 65){
+			at = 90;
+		}
+		//at--;
+		
+		String as = String.valueOf((char)at);
+		System.out.println(as);
+		
+		return str;
+	}
+}

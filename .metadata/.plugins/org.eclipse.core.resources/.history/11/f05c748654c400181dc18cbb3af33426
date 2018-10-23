@@ -1,0 +1,16 @@
+package thread;
+
+public class SecondThread implements Runnable{
+
+	private int i;
+	@Override
+	public void run() {
+		
+		
+		
+		
+	}
+
+	
+	
+}

@@ -1,0 +1,26 @@
+package study;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapTest {
+
+	public static void main(String[] args) {
+		Map<String,Object> map = new HashMap<String,Object>();
+	    map.put("animal1", "qe");
+		int hashCode = map.hashCode();
+		System.out.println(hashCode);
+		
+		int a = 17,b = 19;
+		System.out.println("与运算"+(a&b));
+
+		System.out.println("或运算"+(a|b));
+
+		System.out.println("非运算"+(~b));
+
+		System.out.println("异或运算"+(a^b));
+
+
+	}
+	
+}

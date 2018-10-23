@@ -1,0 +1,15 @@
+package study;
+
+public class TestChar {
+
+	public static void main(String[] args) {
+		
+		String a = "a";
+		String d = "d";
+		String g = "g";
+		
+		char ch = (char)a;
+		
+		
+	}
+}

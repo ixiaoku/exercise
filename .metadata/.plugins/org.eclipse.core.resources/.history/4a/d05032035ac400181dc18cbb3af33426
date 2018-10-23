@@ -1,0 +1,15 @@
+package thread;
+
+import java.util.concurrent.FutureTask;
+
+public class ThirdThread {
+
+	public static void main(String[] args) {
+		Thread t = new Thread();
+		FutureTask<Integer> task = new FutureTask<Integer>(Callable<Integer>) () ->{
+			
+		
+		
+		}
+	}
+}

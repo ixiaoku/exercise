@@ -1,0 +1,67 @@
+package sql;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import redis.clients.jedis.Jedis;
+
+public class TestRedis {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		//连接本地的 Redis 服务
+        Jedis jedis = new Jedis("134.175.219.242",6379);
+        System.out.println("连接成功");
+        //设置 redis 字符串数据
+        jedis.set("runoobkey", "www.runoob.com");
+        // 获取存储的数据并输出
+        System.out.println("redis 存储的字符串为: "+ jedis.get("runoobkey"));
+	}
+	
+	/**
+     * redis中hash类型常用操作
+     * @param jedis
+     */
+    public static void hashMapCmdTest(Jedis jedis){
+
+        System.out.println("----------------redis-HashMap-----------------");
+        //hset:返回值为key为新返回1，为旧覆盖旧值返回0
+        System.out.println("hset:"+jedis.hset("user","name","wangshaoyi"));
+
+        Map<String,String> map = new HashMap<String,String>();
+        map.put("name","wsy");
+        map.put("age","29");
+        //hmset:map对象
+        //System.out.println("hmset:" + jedis.hmset("user", map));
+
+        //hexists:判断hashmap中key是否存在
+        //System.out.println("hexists:"+jedis.hexists("user","age"));
+
+        //hget:获取map中key对应的value
+        //System.out.println("hget:"+jedis.hget("user","name"));
+
+        //hgetAll:获取map中所有对象
+        //System.out.println("hgetAll:"+jedis.hgetAll("user"));
+
+        //hkeys:获取map中所有key
+        //System.out.println("hkeys:"+jedis.hkeys("user"));
+
+        //hvals:获取map中所有value
+        //System.out.println("hvals:"+jedis.hvals("user"));
+
+
+        //hmget:批量获取keys的对象，返回List
+        //System.out.println("hmget:"+jedis.hmget("user","age","name"));
+
+        //hlen:map的大小
+        //System.out.println("hlen:"+jedis.hlen("user"));
+
+        //hdel:删除map中对应key,正确删除返回1
+        //System.out.println("hdel:"+jedis.hdel("user","age0"));
+
+        //System.out.println("----------------redis-HashMap-----------------\n");
+
+    }
+
+	
+}

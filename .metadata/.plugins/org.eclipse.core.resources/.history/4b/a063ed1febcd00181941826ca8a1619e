@@ -1,0 +1,18 @@
+package study;
+
+public class TestChar {
+
+	public static void main(String[] args) {
+		
+		String a = "a";
+		String d = "d";
+		String g = "g";
+		
+		char ch = a.charAt(0);
+		byte ach =(byte)ch;
+		System.out.println(ach);
+		
+		
+		
+	}
+}

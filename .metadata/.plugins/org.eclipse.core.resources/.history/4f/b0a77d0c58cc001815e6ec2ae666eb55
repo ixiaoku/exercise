@@ -1,0 +1,30 @@
+package study;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class MapTest {
+
+	public static void main(String[] args) {
+		Map<String,Object> map = new HashMap<String,Object>();
+	    map.put("animal1", "qe");
+		int hashCode = map.hashCode();
+		System.out.println(hashCode);
+		
+		
+		Map<String, String> map1 = new HashMap<String, String>();
+	    map1.put("apple", "Æ»¹û");
+	    map1.put("watermelon", "Î÷¹Ï");
+	    map1.put("banana", "Ïã½¶");
+	    map1.put("peach", "ÌÒ×Ó");
+	 
+	    Iterator iter = map1.entrySet().iterator();
+	    while (iter.hasNext()) {
+	        Map.Entry entry = (Map.Entry) iter.next();
+	        System.out.println(entry.getKey() + "=" + entry.getValue());
+	    }
+
+	}
+	
+}

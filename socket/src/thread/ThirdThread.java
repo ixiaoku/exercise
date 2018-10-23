@@ -1,0 +1,15 @@
+package thread;
+
+public class ThirdThread {
+
+	/*public static void main(String[] args) {
+		Thread t = new Thread();
+		FutureTask<Integer> task = new FutureTask<Integer>(Callable<Integer>) () ->{
+			int i = 0;
+			for(; i < 100;i++){
+				System.out.println(Thread.currentThread().getName() + " " + i);
+			}
+			return i;
+		}
+	}*/
+}

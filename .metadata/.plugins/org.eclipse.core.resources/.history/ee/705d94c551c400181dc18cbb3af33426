@@ -1,0 +1,11 @@
+package thread;
+
+public class FirstThread {
+
+	private int i;
+	public void run(){
+		for(; i < 100 ; i++){
+			
+		}
+	}
+}
